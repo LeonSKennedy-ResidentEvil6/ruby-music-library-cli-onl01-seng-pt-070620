@@ -11,7 +11,7 @@ class MusicLibraryController
   def call
     #puts ""
     puts "Welcome to your music library!"
-    #puts "------------------------------"
+    # puts "------------------------------"
     puts "To list all of your songs, enter 'list songs'."
     puts "To list all of the artists in your library, enter 'list artists'."
     puts "To list all of the genres in your library, enter 'list genres'."
@@ -90,7 +90,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist = gets
-    #puts "'#{artist}'"
+    puts "'#{artist}'"
     songs = list.select { |song| song.split(" - ")[0] == artist }
     songs.each_with_index do |song, index|
       index_plus = index + 1
