@@ -89,7 +89,7 @@ class MusicLibraryController
 
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
-    artist = gets
+    # artist = gets
     puts "'#{artist}'"
     songs = list.select { |song| song.split(" - ")[0] == artist }
     songs.each_with_index do |song, index|
