@@ -25,7 +25,7 @@ class MusicLibraryController
     while input != "exit" do
 
       #puts ""
-      puts "What would you like to do?"
+      puts "What would you like to do? Options: help, list songs, list artists, list genres, list genre, play song."
       #puts "type 'help' for a list of commands"
       #puts ""
 
